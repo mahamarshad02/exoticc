@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.racing-sans-font{
+    font-family: 'Racing Sans One', sans-serif;
+}
+
+.bgimg {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bgimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../../assets/images/contact.jpg') center/cover no-repeat fixed;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.container a {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+}
+
+.headerset {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    /* padding: 100px; */
+    box-sizing: border-box;
+}
+
+.headerset h1 {
+    font-size: 5em;
+    margin-bottom: 0;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-center {
+    margin-left: 8rem !important;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.headings {
+    color: white !important;
+}
+
+/* white box */
+.white-box{
+    height: 15rem;
+}
+
+/* Greybox */
+.Greybox{
+    height:auto;
+    width: 100%;
+    background-color: #E5E4E2;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+.formbox{
+    background-color: white;
+}
+.form-style {
+    height: 3.5rem !important;
+}
+
+.form-style::placeholder {
+    font-weight: bold;
+    color: grey;
+}
+
+.send-mess {
+    background-color: red !important;
+    color: white !important;
+    border-radius: 0% !important;
+    float: left;
+    width: 11rem;
+    font-weight: bold!important;
+}
+.form-container{
+      box-shadow: rgba(128, 128, 128, 0.25) 0px 54px 55px, rgba(128, 128, 128, 0.12) 0px -12px 30px, rgba(128, 128, 128, 0.12) 0px 4px 6px, rgba(128, 128, 128, 0.17) 0px 12px 13px, rgba(128, 128, 128, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* /////// */
+
+/* Footer */
+.headerset-one {
+    background-color: #28282B;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.footer {
+    color: white;
+}
+
+.alllinks a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.alllinks a:hover {
+    color: red !important;
+    cursor: pointer;
+}
+
+.line {
+    background-color: white !important;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.social-icons:hover {
+    color: red !important;
+}
+
+
+/* MEDIA QUERIES */
+/* Media queries */
+@media (max-width:900px) and (min-width:768px) {
+    .custom-center {
+        margin-left: 2rem !important;
+    }
+
+    .headerset h1 {
+        margin-top: 5rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        background-color: #424242;
+        margin-top: 0;
+        padding: 0px 5px 0px 5px !important;
+    }
+
+    .navbar a{
+        margin: 0;
+    }
+
+    .logo {
+        width: 80px !important;
+    }
+
+    .nav-link {
+        color: whitesmoke !important;
+        margin-left: 1rem;
+    }
+
+    .icon {
+        border-color: red !important;
+    }
+
+    .headerset h1 {
+        margin-top: 10rem !important;
+    }
+/* 
+    .bigbox {
+        margin-top: 2rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    #bigbox {
+        margin-bottom: 2rem;
+    } */
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        background-color: #424242;
+        margin-top: 0;
+        padding: 0px 10px 0px 10px !important;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .headerset h1 {
+        margin-top: 5rem !important;
+        font-size: 4rem;
+    }
+}
+/* //////////// */

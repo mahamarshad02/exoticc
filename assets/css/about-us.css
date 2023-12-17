@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+.racing-sans-font{
+    font-family: 'Racing Sans One', sans-serif;
+}
+.bgimg {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bgimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../../assets/images/aboutus.jpeg') center/cover no-repeat fixed;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.container a {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+}
+
+.headerset {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.headerset h1 {
+    font-size: 5em;
+    margin-bottom: 0;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-center {
+    margin-left: 8rem !important;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.headings {
+    color: white !important;
+}
+
+/* ///Who we are */
+.box {
+    background-color: black;
+    width: 100%;
+}
+
+.bigbox {
+    background-color: black;
+    color: white;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+/* ///////////// */
+
+
+/* Contact us */
+.bgimg2 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bgimg2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../../assets/images/contactus-about.jpg') center/cover no-repeat fixed;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.contact-about {
+    color: white !important;
+}
+
+.form-style {
+    height: 3.5rem !important;
+}
+
+.form-style::placeholder {
+    font-weight: bold;
+    color: grey;
+}
+
+.send-mess {
+    background-color: red !important;
+    color: white !important;
+    border-radius: 0% !important;
+    float: left;
+}
+/* ////////// */
+
+
+/* Footer */
+.bgimg3 {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bgimg3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../../assets/images/contactus-about.jpg') center/cover no-repeat fixed;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(43, 42, 42);
+    background: linear-gradient(to top, rgb(19, 18, 18), rgba(12, 12, 12, 0.9));
+    z-index: 0;
+}
+
+.headerset {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer {
+    color: white;
+}
+
+.alllinks a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.alllinks a:hover {
+    color: red !important;
+    cursor: pointer;
+}
+
+.line {
+    background-color: white !important;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.social-icons:hover {
+    color: red !important;
+}
+
+/* ////// */
+
+
+
+/* Media queries */
+@media (max-width:1000px){
+    .bgimg2 {
+        height: 70vh !important;
+    }
+}
+
+@media (max-width:900px) {
+    .custom-center {
+        margin-left: 2rem !important;
+    }
+
+    .headerset h1 {
+        margin-top: 15rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        background-color: #424242;
+        margin-top: 0;
+        padding: 0px 5px 0px 5px !important;
+    }
+
+    .logo {
+        width: 80px !important;
+    }
+
+    .nav-link {
+        color: whitesmoke !important;
+        margin-left: 1rem;
+    }
+
+    .navbar a{
+        margin: 0;
+    }
+
+    .icon {
+        border-color: red !important;
+    }
+
+    .headerset h1 {
+        margin-top: 10rem !important;
+    }
+
+    .bigbox {
+        margin-top: 2rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .boximage {
+        width: 100vh !important;
+    }
+
+    #bigbox {
+        margin-bottom: 2rem;
+    }
+    .bgimg2 {
+        height: 110vh !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        background-color: #424242;
+        margin-top: 0;
+        padding: 0px 10px 0px 10px !important;
+    }
+    .bgimg2 {
+        height: 110vh !important;
+    }
+
+}
+
+@media (max-width: 875px) {
+    .bgimg2 {
+        height: 110vh !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .headerset h1 {
+        margin-top: 2rem !important;
+    }
+    .bgimg2 {
+        height: 110vh !important;
+    }
+}
